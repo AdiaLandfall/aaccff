@@ -45,9 +45,7 @@ body, html, .page-frame{
     gap: 5rem;
 }
 
-
-
-.profile-image-content{
+.profile-image-content{ 
     width: 40vw;
     display: flex;
     flex-direction: column;
@@ -73,16 +71,6 @@ body, html, .page-frame{
     scrollbar-width: thin;
 }
 
-svg.glyph{
-    position: absolute;
-    top: 5rem;  right: 5rem;
-    width: 10vw;  height: 10vw;
-}
-svg.glyph path {
-    stroke: var( --soul-color-main );
-    fill: var( --soul-color-main );
-    stroke-width: .2;
-}
 
 .background-icon{
     pointer-events: none;    
@@ -93,10 +81,31 @@ svg.glyph path {
     opacity: .1;
 }
 
+
+.title-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
 .profile-title{
     font-size: 3rem;
     font-family: 'Sacramento';
 }
+
+svg.glyph{
+    width: 10vw;  height: 10vw;
+}
+svg.glyph path {
+    stroke: var( --soul-color-main );
+    fill: var( --soul-color-main );
+    stroke-width: .2;
+}
+
+
+
+
+
 
 .profile-text h2{
     grid-column: 1 / -1;
