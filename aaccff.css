@@ -5,6 +5,7 @@ body, html, .page-frame{
     font-family:  'Montserrat';
     background-color: #001;
     color: #D0D1D0;
+    overflow: hidden;
 }
 
 .page-frame{
@@ -17,18 +18,20 @@ body, html, .page-frame{
     height: 5vh;
     display: flex;
     justify-content: space-between;
-    margin: 1rem 5rem;
+    margin: 1rem 1.5rem;
 }
 
 .header-content .domain-title{
-    font-size: 1.1rem;
+    letter-spacing: 0.5rem;
 }
+
 .header-content .menu{
     width: 80vw;
     display: flex;
     justify-content: space-around;
+    pointer-events: auto;     
 }
-.header-content .menu a{
+.header-content a{
     color: inherit;
     text-decoration: none;
 }
@@ -42,36 +45,51 @@ body, html, .page-frame{
     gap: 5rem;
 }
 
-.profile-image{
+
+
+.profile-image-content{
+    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
     overflow-y: scroll;
-    scrollbar-width: none;
+    overflow-x: hidden;
+    scrollbar-width: thin;
 }
-.profile-image img{
-    width: 30vw;
+.profile-image-content img{
+    width: 100%;
     border-radius: 1rem;
-    border: #AACCFF solid;
+    border-color: var( --soul-color-main );
+    border-style: solid;
     border-width: .2rem .4rem .1rem;
 }
 
 
 .profile-text{
-    width: 60vw;
+    width: 100%;
     overflow-y: auto;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+}
+
+svg.glyph{
+    position: absolute;
+    top: 5rem;  right: 5rem;
+    width: 10vw;  height: 10vw;
+}
+svg.glyph path {
+    stroke: var( --soul-color-main );
+    fill: var( --soul-color-main );
+    stroke-width: .2;
 }
 
 .background-icon{
-    position: absolute;
+    pointer-events: none;    
+    position: fixed;
     transform: rotate(30deg);
-    width: 20vw;
+    width: 50vw;
     height: auto;
-    top: 5rem;
-    right: 5rem;
     opacity: .1;
 }
 
