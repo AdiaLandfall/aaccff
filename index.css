@@ -1,0 +1,39 @@
+.main-content.splash{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    justify-content: center;
+}
+
+.index-splash-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-splash{
+    width: 100%;
+    max-height: 40vh;
+    border-radius: 5rem;
+    object-fit: contain;
+    background: linear-gradient( -45deg, #FFFFFF 0%,
+            #000010 20%, #000010 80%,
+            #FFFFFF 100% );
+}
+
+.splash-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash-text.title{
+    font-size: 4rem;
+    font-family: "Amita";
+    font-weight: bold;
+}
+
+.splash-text.subtext{
+    font-size: 1.5rem;
+}

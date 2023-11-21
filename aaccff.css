@@ -93,6 +93,11 @@ body, html, .page-frame{
     font-family: 'Sacramento';
 }
 
+.title-flex img{
+    width: 10vw;  height: 10vw;
+    margin-right: 1vw;
+}
+
 svg.glyph{
     width: 10vw;  height: 10vw;
 }
@@ -119,6 +124,12 @@ svg.glyph mask path.remove{
 .profile-text h2{
     grid-column: 1 / -1;
 }
+
+.profile-text h2 span.luceren{
+    font-style: italic;
+    font-size: 50%;
+}
+
 
 
 
