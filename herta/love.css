@@ -1,0 +1,194 @@
+body, html, .page-frame{
+    width: 100%;
+    height: 100%;
+    padding: 0; margin: 0;
+    font-family:  'Montserrat';
+    background-color: #001;
+    color: #D0D1D0;
+    overflow: hidden;
+}
+
+.page-frame{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1.5rem;
+}
+
+.header-content .domain-title{
+    letter-spacing: 0.5rem;
+}
+
+.header-content .menu{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    pointer-events: auto;     
+}
+.header-content a{
+    color: inherit;
+    text-decoration: none;
+}
+.header-content .menu a:hover{
+    color: #D0D0FF;
+}
+
+.main-content{
+    height: 100%;
+    display: flex;
+    gap: 5rem;
+}
+
+.profile-image-content{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 10%;
+    margin: 3%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile-image-content img{
+    width: 100%;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: .2rem .4rem .1rem;
+}
+
+
+.profile-text{
+    width: 100%;
+    margin: 3%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+
+.background-icon{
+    pointer-events: none;    
+    position: fixed;
+    transform: rotate(30deg);
+    width: 50vw;
+    height: auto;
+    opacity: .1;
+}
+
+
+.title-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+.profile-title{
+    font-size: 3rem;
+    font-family: 'Sacramento';
+}
+
+.title-flex img{
+    width: 10vw;  height: 10vw;
+    margin-right: 1vw;
+}
+
+svg.glyph{
+    width: 100%; height: 100%;
+}
+svg.glyph  {
+    stroke-width: .2;
+    &.adia path{ stroke: #99CCFF; fill: #99CCFF;}
+    &.haelwed path{ stroke: #004010; fill: #004010;}
+    &.cindre path{ stroke: #440; fill: #440;}
+    &.summre path{ stroke: #F00; fill: #F00;}
+    &.rose path{ stroke: #800040; fill: #800040;}
+    &.snow path{ stroke: #80F; fill: #80F;}
+    &.anzille path{ stroke: #EEFF99; fill: #EEFF99;}
+    &.nio path{ stroke: #88A; fill: #88A;}
+}
+
+svg.glyph mask path.allow{
+    stroke: 0;
+    fill: #FFF;
+}
+svg.glyph mask path.remove{
+    stroke: 0;
+    fill: #000;
+}
+
+
+.narrative .signed{
+    margin: 0; padding: 0;
+    text-align: right;
+}
+
+
+.heart-shape{
+    animation: 3s ease-in-out 0s infinite alternate heartbounce;
+}
+
+@keyframes heartbounce {
+    from {
+      /* pushes the sun down past the viewport */
+      transform: translateY(-5vh);
+    }
+
+
+    to {
+      /* returns the sun to its default position */
+      transform: translateY(5vh);
+    }
+  }
+
+
+
+
+
+
+.profile-text h2{
+    grid-column: 1 / -1;
+}
+
+.profile-text h2 span.luceren{
+    font-style: italic;
+    font-size: 50%;
+}
+
+
+
+
+.detailae{
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+    grid-template-columns: max-content max-content max-content 1fr;
+    align-items: center;
+}
+
+.detailae .label{
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: -0.05rem;
+}
+.detailae .wide{
+    grid-column: 2 / -1;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.narrative{
+    font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    text-indent: 3rem;
+    margin: 0.5rem 0;
+    padding: 0;
+}
