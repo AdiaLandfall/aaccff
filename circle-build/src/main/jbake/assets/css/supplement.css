@@ -1,0 +1,17 @@
+img.supplement-image{
+    flex-basis: 0; flex-grow: 2;
+    min-width: 0;
+    height: fit-content;
+    object-fit: contain;
+    object-position: center;
+    border: 0; margin: 0; padding: 0;
+    border-radius: 10vw;
+}
+
+.profile-text.supplement{
+    flex-grow: 1;
+}
+
+.narrative{
+    font-size: 1.6vw;
+}
